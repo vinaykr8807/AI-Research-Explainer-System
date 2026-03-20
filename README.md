@@ -49,10 +49,10 @@ playwright install chromium
 echo "GROQ_API_KEY=your_key_here" > .env
 
 # 4. Run backend
-uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn backend.main:app --reload --host 0.0.0.0 --port 8001
 
 # 5. Open browser
-# Navigate to http://localhost:8000
+# Navigate to http://localhost:8001
 ```
 
 ---
@@ -87,8 +87,8 @@ PEXELS_API_KEY=your_pexels_api_key (optional)
 ## Usage
 
 ### Web Interface
-1. Start backend: `uvicorn backend.main:app --reload --host 0.0.0.0 --port 8000`
-2. Open http://localhost:8000 in browser
+1. Start backend: `uvicorn backend.main:app --reload --host 0.0.0.0 --port 8001`
+2. Open http://localhost:8001 in browser
 3. Enter a query and select knowledge level
 4. Explore results in tabs: Beginner → Code → Diagram → Quiz → Socratic
 
@@ -104,7 +104,7 @@ PEXELS_API_KEY=your_pexels_api_key (optional)
 
 **Example:**
 ```bash
-curl -X POST http://localhost:8000/explain \
+curl -X POST http://localhost:8001/explain \
   -H "Content-Type: application/json" \
   -d '{
     "query": "How do Transformers work?",
@@ -172,7 +172,7 @@ AI-Research-Explainer-System/
 ```env
 GROQ_API_KEY=your_groq_api_key          # Required for LLM synthesis
 PEXELS_API_KEY=your_pexels_api_key      # Optional for image fallback
-PORT=8000                               # Backend port
+PORT=8001                               # Backend port
 RAG_CHUNK_SIZE=500                      # Text chunk size
 ```
 
