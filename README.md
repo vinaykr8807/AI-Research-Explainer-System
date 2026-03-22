@@ -1,4 +1,4 @@
-# AI Research Explainer Engine
+# AI Insight Architect
 
 <div align="center">
 
@@ -19,7 +19,7 @@ Transform complex research topics into structured, multi-level explanations powe
 
 ## Overview
 
-AI Research Explainer Engine transforms complex technical topics into **structured, multi-level explanations** by combining:
+AI Insight Architect transforms complex technical topics into **structured, multi-level explanations** by combining:
 
 - 🔍 **Web Search** — DuckDuckGo multi-query search + academic paper targeting
 - 📊 **Vector Retrieval** — FAISS semantic search with Sentence-Transformers embeddings
@@ -117,7 +117,7 @@ curl -X POST http://localhost:8001/explain \
 ## Project Structure
 
 ```
-AI-Research-Explainer-System/
+AI-Insight-Architect/
 ├── backend/
 │   ├── main.py              # FastAPI backend
 │   ├── rag_service.py       # Web scraping + FAISS retrieval

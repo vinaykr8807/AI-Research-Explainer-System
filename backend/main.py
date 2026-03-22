@@ -1,5 +1,5 @@
 """
-AI Research Explainer Engine — FastAPI Backend (v2.0)
+AI Insight Architect — FastAPI Backend (v2.0)
 
 Reuses all existing backend modules in /backend/:
   rag_service.py     → scrape_pages, retrieve_context
@@ -107,7 +107,7 @@ print(f"✅ Backend ready — Groq={'set' if GROQ_API_KEY else '⚠ missing'} | 
 # ══════════════════════════════════════════════════════════════════════════════
 
 app = FastAPI(
-    title="AI Research Explainer Engine",
+    title="AI Insight Architect",
     description=(
         "Searches the web, extracts knowledge with RAG, "
         "and generates structured AI explanations via Groq."
@@ -213,7 +213,7 @@ def _build_prompt(query: str, context: str, level: str, include_code: bool) -> s
         mechanics_req = "Exhaustive Implementation & Component Logic. 600+ words. Focus on engineering trade-offs."
         advanced_req = "Core mathematical principles. 300 words. Key formulas only, explained through an engineering lens."
     else: # "all" or fallback
-        persona = "You are the World's most advanced AI Research Explainer. Provide a full Master-class report covering all knowledge levels."
+        persona = "You are the World's most advanced AI Insight Architect. Provide a full Master-class report covering all knowledge levels."
         beginner_req = "Intuitive Foundation. 250+ words."
         mechanics_req = "Industry Architecture. 450+ words."
         advanced_req = "Research & Mathematical Internals. 600+ words. Extensive LaTeX math."

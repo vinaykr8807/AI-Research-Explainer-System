@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════════════════════════════════════════
-   AI Research Explainer Engine — Frontend Logic
+   AI Insight Architect — Frontend Logic
    Kroki.io D2 rendering + Wikipedia image + YouTube embed + RAG explanation
    ═══════════════════════════════════════════════════════════════════════════ */
 
